@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow p-3 mb-5" id="navBar">
+        <a class="navbar-brand"><img src="media/logo.png" id="logo"></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12" id="col-left">
+                <div id="conteudo">
+                    <h3>Gerador de link para Whatsapp</h3>
+                    <label for="numero">Nº DO CELULAR</label>
+                    <input type="tel" class="form-control form-control-lg" id="numero" aria-describedby="emailHelp"
+                        placeholder="99 9 9999 9999" pattern="\([0-9]{2}\)[\s][9]{1}[\s][0-9]{4}-[0-9]{4}">
+                    <br>
+                    <label for="mensagem">MENSAGEM</label>
+                    <input type="text" class="form-control form-control-lg" id="mensagem" aria-describedby="emailHelp"
+                        placeholder="Escreva o texto">
+                    <br>
+                    <center><button type="button" class="btn btn-primary botao" id="botao"  data-toggle="modal" data-target="#modal">Gerar Link</button></center>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12" id="col-right">
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog"
+            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="content-modal">
+                    <div class="modal-header" id="box-modal">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Link Gerado</h5>
+                        <button type="button" class="close novo" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <input type="text" class="form-control form-control-lg " readonly="readonly" id="link" value="comer">
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn botao_n btn_modal novo" data-dismiss="modal" id="novo"> Novo link</button>
+                        <button type="button" class="btn btn-primary botao btn_modal" id="copiar_btn" onclick="copiarTexto()">Copiar Link</button>
+                        <button type="button" class="btn btn-primary botao btn_modal"><a href="" target="_blank" id="open_btn" width="100%"> Abrir Link</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        ></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">$("#numero").mask("(00) 9 0000-0000");</script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

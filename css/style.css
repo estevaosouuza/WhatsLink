@@ -1,0 +1,134 @@
+#navBar {
+  background-color: #1ebea5;
+  padding: 0 90px;
+  min-height: 70px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#modal{
+    background-color: #1ebea698;
+}
+#box-modal{
+    background-color: #1ebea5;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px !important;
+}
+#content-modal{
+    border: 2px solid #1ebea5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px !important;
+}
+
+#logo {
+  height: 45px;
+}
+#col-right {
+  background-image: url("../media/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+#col-left {
+  background-color: #1ebea5;
+}
+#col-left,
+#col-right {
+  height: 100vh;
+}
+#conteudo h3 {
+  color: white;
+  padding-top: 30vh;
+  text-align: center;
+}
+#conteudo label {
+  text-align: left !important;
+  color: white;
+  margin-left: 15px;
+}
+input{
+  border-radius: 200px !important;
+  height: 60px !important;
+}
+#botao {
+  width: 200px;
+  font-size: 1.2em !important;
+  height: 60px !important;
+}
+h3 {
+  width: 50vw;
+}
+@media screen and (max-width: 991px) {
+  h3 {
+    width: 90vw;
+  }
+  #col-left {
+    overflow-x: auto;
+  }
+  
+}
+
+.form-control::placeholder {
+  font-size: 0.8em;
+}
+input:focus,
+.botao:focus {
+  outline: none !important;
+  border: 1px solid #17b152 !important;
+  box-shadow: 0 0 10px #17b152, 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.botao {
+  background-color: #26d367 !important;
+  border:1px solid #26d367 !important;
+  border-radius: 200px !important;
+}
+.botao:hover {
+  background-color: #17b152 !important;
+  border:1px solid #17b152 !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*BOTAO NEGATIVO*/
+.botao_n:focus {
+    outline: none !important;
+    border: 1px solid #17b152 !important;
+    box-shadow: 0 0 10px #17b152, 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+  .botao_n {
+    color: #26d367 !important;
+    background-color: white;
+    border: 1px solid #26d367 !important;
+    border-radius: 200px !important;
+  }
+  .botao_n:hover {
+    background-color: #26d367 !important;
+    border: 1px solid #26d367 !important;
+    color:white!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+  
+
+/*FIM BOTAO NEG*/
+.btn_modal{
+      width: 50vw;
+      height: 40px;
+      vertical-align: middle;
+      font-size: 1.1em!important;
+
+  }
+
+  .alert-preto{
+      background-color: rgba(0, 0, 0, 0.602);
+      color: white;
+      text-align: center;
+  }
+  button a:link{
+      color:white!important;
+      text-decoration: none;
+  }
+  button a:visited{
+    color:white!important;
+    text-decoration: none;
+}
